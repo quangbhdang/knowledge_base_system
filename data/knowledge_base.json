@@ -1,0 +1,17 @@
+{
+  "facts": {
+    "env_not_found": "Environment does not exist.",
+    "package_conflict": "Package installation fails due to dependency conflicts.",
+    "conda_not_in_path": "Conda command not found in PATH."
+  },
+  "rules": [
+    {
+      "conditions": [{"attribute": "env_not_found", "value": true}],
+      "conclusion": "Run 'conda env list' to check environments or recreate with 'conda create --name <env>'."
+    },
+    {
+      "conditions": [{"attribute": "conda_not_in_path", "value": true}],
+      "conclusion": "Add Conda to PATH or run 'conda init bash' and restart shell."
+		}
+  ]
+}
