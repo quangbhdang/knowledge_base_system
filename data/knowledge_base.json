@@ -1,8 +1,10 @@
 {
   "facts": {
-    "env_not_found": "Environment does not exist.",
-    "package_conflict": "Package installation fails due to dependency conflicts.",
-    "conda_not_in_path": "Conda command not found in PATH."
+    "environment not found": "Environment does not exist.",
+    "package conflict": "Package installation fails due to dependency conflicts.",
+    "conda not in path": "Conda command not found in PATH.",
+    "conda not installed": "",
+    "unable to call conda": "Conda might not in PATH or user have not run ```conda init```"
   },
   "rules": [
     {
